@@ -181,8 +181,8 @@ output_path = script_path + path_sep
 
 check_directory(output_path)
 
-input_file_name = input_path + 'sample_input.csv'
-out_file_name = output_path + 'sample_output_window_size_15.csv'
+input_file_name = input_path + 'sample_data' + path_sep + 'sample_input.csv'
+out_file_name = output_path + 'sample_data' + path_sep + 'sample_output_window_size_15.csv'
 
 # input_file_name = input_path + 'train_Denson_WINDOW_SIZE_1_61_features_MCC+AUC_elite_9.csv'
 # out_file_name = output_path + 'train_Denson_WINDOW_SIZE_1_61_features_MCC+AUC_elite_9_window_size_15.csv'
