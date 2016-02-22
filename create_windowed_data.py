@@ -181,17 +181,17 @@ output_path = script_path + path_sep
 
 check_directory(output_path)
 
-# input_file_name = input_path + 'test_Denson_WINDOW_SIZE_1_61_features_MCC+AUC_elite_9.csv'
-# out_file_name = output_path + 'test_Denson_WINDOW_SIZE_1_61_features_MCC+AUC_elite_9_window_size_31.csv'
+input_file_name = input_path + 'sample_input.csv'
+out_file_name = output_path + 'sample_output_window_size_15.csv'
 
-input_file_name = input_path + 'train_Denson_WINDOW_SIZE_1_61_features_MCC+AUC_elite_9.csv'
-out_file_name = output_path + 'train_Denson_WINDOW_SIZE_1_61_features_MCC+AUC_elite_9_window_size_31.csv'
+# input_file_name = input_path + 'train_Denson_WINDOW_SIZE_1_61_features_MCC+AUC_elite_9.csv'
+# out_file_name = output_path + 'train_Denson_WINDOW_SIZE_1_61_features_MCC+AUC_elite_9_window_size_15.csv'
 
 win_1_array = np.genfromtxt(input_file_name,skip_header=1,delimiter = ",")
 
 rows,cols = np.shape(win_1_array )
 
-window_size = 31
+window_size = 15
 number_of_features = cols - 1
 terminal_id_col = cols - 1
 
